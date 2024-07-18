@@ -10,4 +10,23 @@ body {
     background-color: gray;
     width: 16px;
     height: 16px;
+    margin: 5px;
+    border: 1px;
+    border-color: rgb(34, 6, 59)
+}
+
+.topper,
+p {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: large;
+    padding: 5px 10px;
+}
+
+.alert {
+    font-size: large;
+    color: aquamarine;
 }
