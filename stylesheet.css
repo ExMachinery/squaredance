@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(34, 6, 59);
+}
+
+.container {
+    display: flex;
+}
+
+.square {
+    background-color: gray;
+    width: 16px;
+    height: 16px;
+}
