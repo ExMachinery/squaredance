@@ -13,7 +13,6 @@ btn.addEventListener("click", () => {
         alert.textContent = "Cant do shit with this values. Instructions unclear, right?";
     } else {
         alert.textContent = "";
-        // return userInput;
     }
 
     console.log(userInput);
