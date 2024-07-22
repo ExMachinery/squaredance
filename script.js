@@ -15,13 +15,25 @@ btn.addEventListener("click", () => {
         alert.textContent = "";
     }
 
-    console.log(userInput);
-
     if (userInput > 0 && userInput <= 100) {
         for (let i = 0; i < userInput; i++) {
             const div = document.createElement("div");
             div.classList.toggle("square");
             content.appendChild(div);
         }
+        
+        const sqrs = content.querySelectorAll(".square");
+        
+        sqrs.forEach((sqr) => {
+            sqr.addEventListener("mouseover", () => {
+                sqr.classList.toggle("hovered");
+            });
+        });
+
     }
-})
+});
+    
+
+
+
+

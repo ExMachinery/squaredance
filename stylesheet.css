@@ -39,3 +39,20 @@ button {
     font-size: large;
     color: aquamarine;
 }
+
+/* Changing color */
+
+.hovered {
+    background-color: yellow;
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    border: 1px;
+    border-color: rgb(34, 6, 59);
+}
+
+.test {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+}
