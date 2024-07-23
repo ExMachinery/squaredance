@@ -19,7 +19,7 @@ body {
     background-color: gray;
     width: 16px;
     height: 16px;
-    margin: 5px;
+    margin: 2px;
     border: 1px;
     border-color: rgb(34, 6, 59);
 }
@@ -46,7 +46,7 @@ button {
     background-color: yellow;
     width: 16px;
     height: 16px;
-    margin: 5px;
+    margin: 2px;
     border: 1px;
     border-color: rgb(34, 6, 59);
 }

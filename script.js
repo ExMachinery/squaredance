@@ -4,6 +4,11 @@ const content = document.querySelector(".container");
 let userInput;
 
 btn.addEventListener("click", () => {
+    const del = document.querySelectorAll(".square");
+    del.forEach((item) => {
+        content.removeChild(item);
+    });
+
     let userInput = prompt("Enter amount of grid you want. For 0 to 100.");
     if (userInput == null || userInput == "") {
         userInput = 0;
