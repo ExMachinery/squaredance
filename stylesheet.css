@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(34, 6, 59);
+    background-color: wheat;
 }
 
 .work-line {
@@ -10,18 +10,19 @@ body {
 .container {
     display: flex;
     justify-content: start;
-    max-width: 960px;
+    /* max-width: 960px; */
     flex-shrink: 0;
     flex-wrap: wrap;
 }
 
 .square {
-    background-color: gray;
+    background-color:black;
     width: 16px;
     height: 16px;
     margin: 2px;
     border: 1px;
     border-color: rgb(34, 6, 59);
+    opacity: 0.1;
 }
 
 .topper,
@@ -33,6 +34,8 @@ p {
 button {
     font-size: large;
     padding: 5px 10px;
+    background-color: blueviolet;
+    color: yellow;
 }
 
 .alert {
@@ -51,8 +54,3 @@ button {
     border-color: rgb(34, 6, 59);
 }
 
-.test {
-    width: 40px;
-    height: 40px;
-    background-color: green;
-}

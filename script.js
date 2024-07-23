@@ -36,13 +36,22 @@ btn.addEventListener("click", () => {
         
         sqrs.forEach((sqr) => {
             sqr.addEventListener("mouseover", () => {
-                sqr.classList.toggle("hovered");
+                let stl = window.getComputedStyle(sqr);
+                let opacity = stl.getPropertyValue("opacity");
+                console.log(opacity);
+                if (opacity < 1) {
+                    opacity = Number(opacity) + 0.1;
+                    console.log(opacity);
+                    sqr.style.cssText = `opacity: ${opacity};`;
+                }
+
+                // sqr.classList.toggle("hovered");
             });
         });
     }
 });
     
-
+// opacity: 0.9;
 
 
 
