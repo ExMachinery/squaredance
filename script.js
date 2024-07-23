@@ -4,7 +4,7 @@ const content = document.querySelector(".container");
 let userInput;
 
 btn.addEventListener("click", () => {
-    const del = document.querySelectorAll(".square");
+    const del = document.querySelectorAll(".row");
     del.forEach((item) => {
         content.removeChild(item);
     });
@@ -22,9 +22,14 @@ btn.addEventListener("click", () => {
 
     if (userInput > 0 && userInput <= 100) {
         for (let i = 0; i < userInput; i++) {
-            const div = document.createElement("div");
-            div.classList.toggle("square");
-            content.appendChild(div);
+            const row = document.createElement("div");
+            row.classList.toggle("row");
+            content.appendChild(row);
+            for (let j = 0; j < userInput; j++) {
+                const div = document.createElement("div");
+                div.classList.toggle("square");
+                row.appendChild(div);
+            }
         }
         
         const sqrs = content.querySelectorAll(".square");
@@ -34,7 +39,6 @@ btn.addEventListener("click", () => {
                 sqr.classList.toggle("hovered");
             });
         });
-
     }
 });
     
